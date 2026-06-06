@@ -30,3 +30,14 @@ addBtn.addEventListener('click', () => {
         renderTodos();
     }
 });
+// Feature: Complete Task
+window.toggleComplete = function(index) {
+    todos[index].completed = !todos[index].completed;
+    renderTodos();
+}
+
+// Feature: Delete Task
+window.deleteTodo = function(index) {
+    todos.splice(index, 1);
+    renderTodos();
+}
