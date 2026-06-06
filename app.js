@@ -17,7 +17,7 @@ function renderTodos() {
                 <button onclick="toggleComplete(${index})">✓</button>
                 <button onclick="deleteTodo(${index})">✗</button>
             </div>
-        ];
+        `;
         todoList.appendChild(li);
     });
 }
